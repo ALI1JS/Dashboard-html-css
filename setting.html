@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h2>AHM</h2>
+            <i class="fa-solid fa-circle"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-regular fa-chart-bar fa-fw"></i><span>Dashboard</span></a></li>
+                <li><a href="setting.html"> <i class="fa-solid fa-gear fa-fw"></i> <span>settings</span></a></li>
+                <li><a href="profile.html"><i class="fa-regular fa-user fa-fw"></i><span>profile</span></a></li>
+                <li><a href="projects.html"><i class="fa-solid fa-diagram-project fa-fw"></i><span>projects</span></a></li>
+                <li><a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i><span>courses</span></a></li>
+                <li><a href="friends.html"><i class="fa-regular fa-circle-user fa-fw"></i><span>friends</span></a></li>
+                <li><a href="files.html"><i class="fa-regular fa-file fa-fw"></i><span>files</span></a></li>
+                <li><a href="plans.html"><i class="fa-regular fa-credit-card fa-fw"></i><span> plans</span></a></li>
+            </ul>
+       </nav>
+      </div>
+      <header class="header">
+          <div class="form">
+           <form action="#">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <input type="search" value="type a keyword">
+           </form>
+          </div>
+          <div class="user">
+           <i class="fa-regular fa-bell"></i>
+           <img src="imgs/team-01.png">
+          </div>
+      </header>
+      
+      <div class="container">
+        <div class="heading">
+            <h2>settings</h2>
+            <div class="layer1">
+                <div class="layer2"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sitecontrol">
+                <div class="heading">
+                    <h3>Site Control</h3>
+                  <p>Control The Website If There Is Maintenance</p>
+                </div>
+                <div class="control">
+                    <div class="text">
+                        <h5>Website Control</h5>
+                        <p>Open/Close Website And Type The Reason</p>
+                    </div>
+                       <input type="checkbox" checked>
+                </div>
+                <textarea placeholder="close message content"></textarea>
+            </div>
+            <div class="sitecontrol sitecontrol2">
+                <div class="heading">
+                    <h3>General Info</h3>
+                  <p>General Information About Your Account</p>
+                </div>
+                 <form action="#">
+                    <div class="firstname">
+                        <label for="fname">firstname</label>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="lastname">
+                        <label for="lname">lastname</label>
+                        <input type="text" id="lname">
+                    </div>
+                    <div class="email">
+                         <div class="emailinput">
+                            <label for="email">email</label>
+                            <input type="email" id="email" disabled>
+                         </div>
+                         <a href="setting.html">change</a>
+                        </div>
+                 </form>
+            </div>
+            <div class="sitecontrol security">
+                <div class="heading">
+                    <h3>Security Info</h3>
+                  <p>Security Information About Your Account</p>
+                </div>
+
+                <div class="password">
+                    <div class="heading">
+                        <h3>Password</h3>
+                      <p>Last Change On 25/10/2021</p>
+                    </div>
+                    <a href="setting.html">change</a> 
+                </div>
+                <div class="auth">
+                    <div class="heading">
+                        <h3>Two-Factor Authentication</h3>
+                      <p>Enable/Disable The Feature</p>
+                    </div>
+                    <input type="checkbox"> 
+                </div>
+                <div class="device">
+                    <div class="heading">
+                        <h3>Devices</h3>
+                      <p>Check The Login Devices List</p>
+                    </div>
+                    <a href="#">devices</a>
+                </div>
+            </div>
+
+            <div class="sitecontrol socialinfo">
+                <div class="heading">
+                    <h3>Social Info</h3>
+                  <p>Social Media Information</p>
+                </div>
+                <div class="social">
+                    <div class="info">
+                        <i class="fa-brands fa-twitter"></i>
+                        <input type="text" placeholder="twitter username">
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <input type="text" placeholder="facebook username">
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <input type="text" placeholder="linkedin username">
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-youtube"></i>
+                        <input type="text" placeholder="youtube username">
+                    </div>
+                </div>
+
+            </div>
+            <div class="sitecontrol WidgetsControl">
+                <div class="heading">
+                    <h3>Widgets Control</h3>
+                  <p>Show/Hide Widgets</p>
+                </div> 
+                <div class="check">
+                    <input type="checkbox" checked>
+                    <p>Quick Draft</p>
+                </div>  
+                <div class="check">
+                    <input type="checkbox" checked>
+                    <p>Yearly Targets</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" checked>
+                    <p>Tickets Statistics</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" checked>
+                    <p>Latest News</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox">
+                    <p>Top Search Items</p>
+                </div>  
+            </div>
+            <div class="sitecontrol BackupManager">
+                   <div class="heading">
+                    <h3>Backup Manager </h3>
+                  <p>Control Backup Time And Location</p>
+                </div>
+                <div class="radio">
+                    <div class="check">
+                        <input type="radio" id="daily">
+                          <label for="daily">daily</label>
+                    </div>
+                    <div class="check">
+                        <input type="radio" id="weekly">
+                          <label for="weekly">weekly</label>
+                    </div>
+                    <div class="check">
+                        <input type="radio" id="monthly">
+                          <label for="monthly">monthly</label>
+                    </div>
+                </div>
+                <div class="lastpart">
+                    <div class="management">
+                        <i class="fa-solid fa-server d-block mb-10"></i>
+                        <span>management</span>
+                    </div>
+                    <div class="management">
+                        <i class="fa-solid fa-server d-block mb-10"></i>
+                        <span>zero</span>
+                    </div>
+                    <div class="management">
+                        <i class="fa-solid fa-server d-block mb-10"></i>
+                        <span>sigma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

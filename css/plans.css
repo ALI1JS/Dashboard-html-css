@@ -1,0 +1,65 @@
+.container .content{
+    padding: 10px;
+}
+.container .content .plan{
+    width: 490px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+}
+.container .content .plan .border{
+    width: 100%;
+    border: 2px solid rgb(69, 220, 31);
+    padding: 2px;
+}
+.container .content .plan .border .heading{
+    width: 100%;
+    background-color: rgb(65, 214, 32);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .content .plan .border .heading span,sup{
+    color: white;
+    font-size:30px;
+    text-transform: capitalize;
+}
+.container .content .plan .features{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
+.container .content .plan .features .feature{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(217, 221, 225);
+   padding:10px 5px;
+}
+.container .content .plan .features .feature .feat{
+    display: flex;
+    align-items: center;
+}
+.container .content .plan .features .feature .feat i{
+    color:rgb(28, 209, 28);
+}
+.container .content .plan .features .feature .feat p{
+    font-size: 15px;
+}
+.container .content .plan .features .feature i.fa-circle-info{
+    color: rgb(130, 132, 134);
+}
+.container .content .plan a{
+    background-color: rgb(15, 184, 15);
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}

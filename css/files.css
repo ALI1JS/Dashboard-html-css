@@ -1,0 +1,142 @@
+.container .content{
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+.container .content .subcontent{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
+ .container .content .subcontent .file{
+     width: 180px;
+     min-height: 180px;
+     background-color: white;
+     border-radius: 5px;
+     padding: 5px;
+     display: flex;
+     align-items:flex-start;
+     gap: 10px;
+     flex-direction: column;
+ }
+ .container .content .subcontent .file .filepart1{
+    width: 100%;
+    border-bottom: 1px solid rgb(231, 238, 238);
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 5px;
+ }
+ .container .content .subcontent .file .filepart1 i{
+   color: rgb(201, 207, 212);
+ }
+ .container .content .subcontent .file .filepart1 h6{
+    color: rgb(187, 190, 195);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ .container .content .subcontent .file .filepart1 .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+ } 
+ .container .content .subcontent .file .filepart1 .info img{
+    width:60px;
+ } 
+ .container .content .subcontent .file .filepart2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+ .container .content .subcontent .file .filepart2 span{
+    color: rgb(201, 205, 210);
+    font-size: 15px;
+ }
+ 
+.container .content .statstic{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    transform: translateY(-370px);
+}
+.container .content .statstic .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(210, 213, 216);
+    padding-bottom: 10px;
+} 
+.container .content .statstic .filestatistc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 1px solid rgb(111, 172, 234); 
+    padding: 5px;
+    border-radius: 7px; 
+ 
+}
+.container .content .statstic .content .filestatistc i{
+    width: 30px;
+    height:30px;
+    background-color: rgb(168, 200, 244);
+    padding:12px 0px 0px 9px;
+    color: rgb(79, 160, 230);
+}
+.container .content .statstic .filestatistc p{
+    font-size: 15px;
+}
+.container .content .statstic .filestatistc span{
+    color: rgb(177, 180, 184);
+    font-size: 15px;
+}
+.container .content .statstic .filestatistc .count{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .content .statstic a{
+    color: white;
+    text-transform: capitalize;
+    background-color: rgb(83, 122, 238);
+    font-size:15px;
+    padding:5px 10px;
+    border-radius: 5px;
+
+}
+
+@media (max-width:920px) {
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .container .content .statstic{
+        transform: translateY(0px);
+        width: 90%;
+    }
+    .container .content .subcontent{
+        width: 90%;
+    }
+    .container .content .subcontent .file{
+        width: 100%;
+    }
+}

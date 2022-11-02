@@ -1,0 +1,82 @@
+.container .content{
+    padding: 5px;  
+}
+.container .content .project{
+    width: 490px;
+    min-height: 200px;
+    background-color: white;
+    border-radius:7px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 10px;
+}
+
+.container .content .project .details{
+     width: 100%;
+     display:flex;
+     align-items:flex-start;
+     gap: 20px;
+     border-bottom:1px solid rgb(192, 197, 201) ;
+     flex-direction: column;
+}
+.container .content .project .details .textdetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .project .details .textdetails .text h4{
+    font-size: 18px;
+     font-weight: bold;
+     text-transform: capitalize;
+     padding: 10px 0px;
+}
+.container .content .project .details .textdetails .text span{
+    color: rgb(202, 206, 209);
+    font-size: 15px;
+}
+.container .content .project .details .textdetails .date p{
+    color: rgb(202, 206, 209);
+}
+.container .content .project .details .view img{
+  width: 35px;
+  height:35px;
+  border-radius: 50%;
+}
+
+.container .content .project .features{
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(224, 227, 230);
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+.container .content .project .features span{
+    background-color: rgb(232, 235, 239);
+    padding:3px 10px;
+    border-radius:7px;
+    font-size: 12px;
+}
+.container .content .project .price{
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .project .price .progresslayer1,.container .content .project .price .progresslayer1 .layer2{
+    height: 6px;
+    border-radius: 5px;
+}
+.container .content .project .price .progresslayer1{
+    width:50%;
+    background-color: rgb(232, 236, 239);
+}
+.container .content .project .price .progresslayer1 .layer2{
+    width: 80%;
+    background-color: red;
+}
+.container .content .project .price span{
+    color: rgb(190, 195, 200);
+}

@@ -1,0 +1,885 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* width */
+ 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(19, 113, 220);
+  }
+  
+.navbar{
+    width:14vw;
+    min-height:100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:white;
+    border-right: 1px solid rgb(234, 239, 239);
+    display:flex;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 10px;
+    gap: 30px;
+}
+
+.navbar .logo{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.navbar .logo h2{
+    text-transform:uppercase;
+    color: rgb(24, 122, 221);
+    text-align: center;
+    font-size:3vw;
+}
+.navbar .logo h2::before{
+    content:'';
+    width: 20px;
+    height: 10px;
+    color:black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.navbar .logo i{
+    font-size:1vw;
+    padding: 5px;
+    color: rgb(24, 122, 221);
+}
+.navbar nav,.navbar nav ul{
+    width: 100%;
+
+}
+.navbar nav ul li{
+    padding: 7px;
+    transition: .8s ease;
+}
+.navbar nav ul li:hover{
+    background-color: rgb(245, 248, 248);
+}
+.navbar nav ul li a{
+  color: rgb(79, 76, 76);
+  font-size:1.3vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 3px;
+
+}
+.navbar nav ul li a i{
+    padding-right:20px;
+}
+
+/* header  */
+.header{
+    width: 86vw;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* border-bottom: 1px solid rgb(231, 227, 227); */
+}
+.header .form{
+    padding: 0px 10px;
+}
+.header .form form{
+    border: 1px solid rgb(166, 170, 173);
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+.header .form form input{
+    border:none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(166, 172, 177);
+}
+.header .form form i{
+    font-size:13px;
+    color: rgb(166, 172, 177);
+}
+.header .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.header .user i::after{
+   content: '';
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   position: absolute;
+   background-color: red;
+   top:10px;
+   right:50px;
+}
+.header .user img{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+
+
+/* container */
+.container{
+    width: 85vw;
+    min-height:100%;
+    background-color:aliceblue;
+    position: absolute;
+    right: 0px;
+    top:50px;
+    display:flex;
+    align-items:flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .heading{
+    width: 100%;
+    padding: 5px;
+}
+.container .heading h2{
+   padding: 5px;
+   text-transform: capitalize;
+}
+.container .heading .layer1{
+    width: 12%;
+    height: 3px;
+    background-color:white;
+    border-radius: 3px;
+}
+.container .heading .layer2{
+    width:50%;
+    height: 3px;
+    background-color:black;
+    border-radius: 3px;
+}
+.container .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap ;
+    gap: 20px;
+}
+.container .content .box{
+    width: 490px;
+    min-height:200px;  
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container .content .box .boxpart1{
+    border-bottom: 1px solid rgb(189, 195, 200);
+}
+.container .content .box .boxpart1 .welcome{
+    background-color: rgb(243, 233, 221);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.container .content .box .boxpart1 .welcome .text h4{
+    color: black;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 20px;
+
+}
+.container .content .box .boxpart1 .welcome .text span{
+    color: rgb(169, 172, 176);
+    padding: 10px;
+    text-transform: capitalize;
+}
+.container .content .box .boxpart1 .welcome .img img{
+    width:150px;
+}
+.container .content .box .boxpart1 .userimg{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(226, 219, 219);
+    transform: translate(10px,-22px);
+
+
+}
+.container .content .box .boxpart1 .userimg img{
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.container .content .box .boxpart2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid rgba(202, 202, 206, 0.4);
+}
+.container .content .box .boxpart2 p{
+
+    text-transform: capitalize;
+    font-size:18px;
+    padding: 5px;
+}
+.container .content .box .boxpart2 p.hint{
+    color: rgb(204, 213, 220);
+}
+.container .content .box .boxpart3{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 10px 0px 0px;
+}
+.container .content .box .boxpart3 a{
+    width: 60px;
+    height: 20px;
+    background-color: rgb(8, 125, 228);
+    border-radius: 5px;
+    color: white;
+    padding-left:7px;
+    font-size:1.2vw;
+}
+
+.container .content .box2 .head{
+    width: 100%; 
+    padding: 10px;
+    display:flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
+.container .content .box2 .head h3,p{
+    padding:3px;
+}
+.container .content .box2 form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 20px;
+    padding: 10px;
+
+}
+.container .content .box2 form input{
+    height: 30px;
+}
+.container .content .box2 form input,.container .content .box2 form textarea{
+    width:95%;
+    border:none;
+    outline: none;
+    background-color: rgb(227, 231, 235);
+    padding: 5px;
+    border-radius:5px;
+}
+
+.container .content .box2 form textarea{
+    height: 150px;
+    resize: none;
+}
+.container .content .box2 form .submit{
+    background-color: rgb(40, 157, 241);
+    color: white;
+    cursor: pointer;
+}
+.container .content .box3content{
+    width:100%;
+    padding:10px 5px 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 20px;
+}
+.container .content .box3content .money{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    gap:10px;
+}
+.container .content .box3content .money .icon{
+    width:80px;
+    height: 80px;
+    padding: 10px;
+    background-color: rgb(176, 213, 246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .box3content .money .icon i{
+   color: blue;
+   font-size: 20px;
+}
+.container .content .box3content .money .progress{
+    width: 100%;
+     display: flex;
+     align-items:flex-start;
+     flex-direction: column;
+} 
+.container .content .box3content .money .progress span{
+    font-weight: bold;
+    padding: 10px;
+}
+.container .content .box3content .money .progress .prohead{
+    color: rgb(207, 214, 220); 
+    padding: 5px 0px;
+} 
+.container .content .box3content .money .progress .layer1{
+    width:80%;
+    height: 2.5px;
+    background-color: rgb(167, 209, 244);
+    border-radius: 5px;
+    position: relative;
+}
+
+.container .content .box3content .money .progress .layer2{
+    width: 95%;
+    height: 2.5px;
+    background-color:rgb(19, 92, 227);
+    border-radius: 5px;   
+}
+.container .content .box3content .money .progress .layer1::before{
+    content: '85%';
+    border-radius: 3px;
+    color: white;
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    background-color:rgb(19, 92, 227);
+    font-size: 15px; 
+}
+.container .content .box3content .project .icon{
+    background-color: rgb(235, 229, 179);
+}
+.container .content .box3content .project .icon i{
+    background-color: rgb(142, 107, 11);
+}
+.container .content .box3content .project .progress .layer1{
+  background-color: rgb(241, 210, 169); 
+}
+.container .content .box3content .project .progress .layer2{
+  background-color: rgb(215, 131, 21); 
+  width: 55%;     
+}
+.container .content .box3content .project .progress .layer1::before{
+    content: '55%';
+    right:120px;
+    background-color: rgb(215, 131, 21); 
+}
+
+.container .content .box3content .team .icon{
+    background-color: rgb(158, 239, 147);
+}
+.container .content .box3content .team .icon i{
+    background-color: rgb(25, 148, 4);
+}
+.container .content .box3content .team .progress .layer1{
+  background-color: rgb(100, 234, 73); 
+}
+.container .content .box3content .team .progress .layer2{
+  background-color: rgb(14, 152, 9); 
+  width: 55%;     
+}
+.container .content .box3content .team .progress .layer1::before{
+    content: '75%';
+    right:120px;
+    background-color: rgb(48, 235, 57); 
+}
+.container .content .heading{
+    padding: 10px;
+}
+.container .content .heading h3,p{
+    padding: 5px;
+}
+.container .content .box4{
+    min-height: 390px;
+}
+.container .content .box4content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px; 
+    padding:15px 0px 30px 0px;
+}
+.container .content .box4content .box31{
+    border: 1px solid rgba(84, 149, 214, 0.467);
+    min-width:200px;
+    min-height:45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    padding:10px 0px;
+    border-radius:10px;
+}
+.container .content .box4content .box31 i{
+    color: rgb(201, 157, 68);
+}
+.container .content .box4content .box31 span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .content .box4content .box31 span.hent{
+    color: rgb(203, 208, 212);
+    font-size: 15px;
+}
+.container .content .box5content{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .content .box5content .news{
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgb(174, 177, 180);
+}
+.container .content .box5content .news img{
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+}
+.container .content .box5content .news .desc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.container .content .box5content .news .desc .text p,.container .content .box6content .task .text p{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.container .content .box5content .news .desc .text span,.container .content .box6content .task .text span{
+    font-size: 14px;
+    color: rgb(186, 190, 193);
+    font-family: sans-serif;
+}
+.container .content .box5content .news .desc .time{
+    width: 80px;
+    height: 20px;
+    border-radius: 7px;
+    background-color:rgb(227, 230, 233);
+    padding-left:12px;
+}
+.container .content .box5content .news .desc .time span{
+    color:black;
+    font-family: sans-serif;
+    font-size: 9px;
+}
+.container .content .box5content .hide{
+    border-bottom: 0px;
+}
+.container .content .box6content,.container .content .box8content{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .content .box6content .task{
+    width: 100%;
+    padding:9px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(203, 206, 209);
+}
+.container .content .box6content .task .icon i{
+  color: black;
+}
+.container .content .box6content .task .icon i:hover{
+    color: rgb(235, 133, 133);
+}
+
+.container .content .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 10px;
+}
+.container .content .head span{
+    text-transform: capitalize;
+    color: rgb(198, 203, 208);
+}
+.container .content .searchcontent,.container .content .searchcontent .search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 9px 5px;
+}
+.container .content .searchcontent{
+    flex-direction: column;
+}
+.container .content .searchcontent .search{
+    justify-content: space-between;
+}
+.container .content .searchcontent .search p{
+    text-transform: capitalize;
+    font-size: 18px;
+     font-weight: bold;
+}
+.container .content .searchcontent .search span{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(213, 211, 208);
+    color:black;
+    border-radius:5px;
+    font-size: 13px;
+    padding:3px 0px 0px 7px;
+
+}
+
+.container .content .box8content{
+    padding: 0px 10px;
+}
+.container .content .box8content .file{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 1px solid rgb(204, 208, 204);
+}
+
+.container .content .box8content .file .filecontent{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .content .box8content .file .filecontent img{
+    width: 30px;
+}
+.container .content .box8content .file .filecontent .desc p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.container .content .box8content .file .filecontent .desc span{
+    text-transform: capitalize;
+    color: rgb(199, 203, 206);
+    font-size: 16px;
+}
+.container .content .box8content .size{
+    width: 40px;
+    height: 20px;
+    background-color:rgb(225, 227, 230);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.container .content .box8content .size span{
+    font-size: 12px;
+}
+/* box9 */
+.container .content .containerprogress{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.container .content .containerprogress .progress{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:15px;
+    padding: 10px;
+}
+.container .content .containerprogress .progress .pro{
+    display: flex;
+    align-items: flex-start;
+    gap:5px;
+}
+.container .content .containerprogress .progress .pro .layer1,.layerhide{
+    width: 25px;
+    height: 25px;
+    border: 1.5px solid rgb(42, 132, 223);
+    border-radius: 50%;
+    padding:1px;
+    position: relative;
+}
+@keyframes hideandshow {
+     0%{
+          background-color: rgb(94, 169, 234);  
+     }
+     50%{
+        background-color: rgb(33, 136, 227);  
+         
+     }
+     100%{
+           background-color: white;
+     }
+}
+.container .content .containerprogress .progress .pro .layer1 .layer2{
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: rgb(33, 136, 227);
+    transition:3s ease-in-out;
+}
+.container .content .containerprogress .progress .pro .layer1 .layer2.animate{
+    animation-name: hideandshow;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+
+.container .content .containerprogress .progress .pro .layer1::after{
+    content: '';
+    width:2px;
+    height:20px;
+    color:rgb(33, 136, 227) ;
+    background-color: rgb(33, 136, 227);
+    position:absolute;
+    top:22px;
+    left:9px;
+}
+.container .content .box9 .containerprogress .rocket img{
+    width: 120px;
+    opacity: .2;
+}
+/* box10 */
+.container .content .box10 .reminds{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    padding:0px 10px;
+} 
+.container .content .box10 .reminds .remind{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+.container .content .box10 .reminds .remind i{ 
+       font-size: 15px;
+    color: rgb(55, 227, 55);
+    padding: 0px 10px;
+}
+.container .content .box10 .reminds .remind .text{
+    border-left: 1.5px solid rgb(55, 227, 55) ;
+    padding: 1px;
+}
+.container .content .box10 .reminds .remind .text p{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.container .content .box10 .reminds .remind .text span{
+    color: rgb(208, 205, 200);
+    font-size: 15px;
+}
+/* box11 */
+.container .content .box11 .user{
+   width: 100%;
+   display: flex;
+   align-items: flex-start;
+   gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(190, 194, 197);
+}
+.container .content .box11 .user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container .content .box11 .user p{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.container .content .box11 .user span{
+    color: rgb(183, 188, 192);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.container .content .box11 .post{
+    width: 100%;
+    padding: 10px;
+}
+.container .content .box11 .post p{
+    line-height: 30px;
+    font-size: 15px;
+    color: rgb(46, 48, 49);
+    border-bottom: 1px solid rgb(190, 194, 197);
+
+}
+.container .content .box11 .react{
+    width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+     color: rgb(161, 165, 169);
+}
+
+/* box12 */
+.container .content .box12 .socialmedia{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+}
+.container .content .box12 .socialmedia .media{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    padding: 0px 5px;
+    gap:1px;
+}
+.container .content .box12 .socialmedia .media i{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color:#1DA1F2;
+    font-size:35px;
+    padding: 5px;
+}
+.container .content .box12 .socialmedia .media .details{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    background-color:rgb(181, 219, 245) ;
+}
+.container .content .box12 .socialmedia .media .details span{
+     color: rgb(11, 129, 208);
+     font-size: 15px;
+     text-transform: capitalize;
+
+}
+.container .content .box12 .socialmedia .media .details a{
+    background-color:#1DA1F2 ;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+/* box13 */
+.container .content .box13{
+    width:950px;
+    overflow-x:auto;
+}
+
+.container .content .box13 table{
+    width:900px;
+    height: 100%;
+    border-right: 1px solid rgb(222, 226, 230);
+}
+.container .content .box13 table tbody td{
+    border-bottom: 1px solid rgb(222, 226, 230);
+    border-left: 1px solid rgb(222, 226, 230);
+    padding: 8px 10px;
+    font-size: 15px;
+}
+.container .content .box13 table thead{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(249, 227, 194);
+}
+.container .content .box13 table thead th{
+    padding: 20px;
+}
+
+.container .content .box13 table tr{
+    width: 100%;
+    text-align: center;
+}
+
+.container .content .box13 table tbody tr:hover{
+    background-color:rgb(244, 241, 241)
+}
+.container .content .box13 table tbody td img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.container .content .box13 table tbody tr td.status h6{
+    background-color: rgb(237, 196, 108);
+    padding: 3px 7px;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+@media (max-width:920px) {
+    .navbar nav ul li a span{
+        display: none;
+    }  
+    .navbar nav ul li a{
+        font-size:3vw;
+        justify-content: center;
+      
+      } 
+      .container .content .box{
+        width:95%;
+    }
+    .container .content .box .boxpart3 a{
+        font-size: 4vw;
+    }
+    .container .content .box5content .news .desc{
+        flex-wrap: wrap;
+        justify-content:center;
+        gap: 10px;
+        text-align: center;
+    }
+    .container .content .box5content .news{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .container .content .box9 .containerprogress .rocket img{
+      display: none;
+    }
+}
+@media (max-width:1024px) { 
+      .container .content .box{
+        width:90%;
+    }
+}

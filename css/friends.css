@@ -1,0 +1,112 @@
+  .container .content{
+    padding: 10px;
+  }
+.container .content .friend{
+    width: 236px;
+    min-height: 250px;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .content .friend .person{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom:10px;
+    border-bottom: 1px solid rgb(221, 224, 227);
+}
+.container .content .friend .person .contact{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.container .content .friend .person .contact i{
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(219, 223, 227);
+    color:black;
+    font-size: 15px;
+}
+.container .content .friend .person .contact i:hover{
+    color:white;
+    background-color: rgb(33, 81, 227);
+}
+.container .content .friend .person .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .content .friend .person .profile img{
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+
+}
+.container .content .friend .person .profile h3{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px;
+}
+.container .content .friend .person .profile span{
+    color: rgb(176, 182, 188);
+    text-transform: capitalize;
+}
+.container .content .friend .details{
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 226);
+    padding: 5px;
+    display: flex;
+    align-items:flex-start;
+    gap: 5px;
+    flex-direction: column;
+}
+.container .content .friend .details .detail{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding:2px;
+    color: rgb(115, 120, 124);
+}
+.container .content .friend .controlpanale{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.container .content .friend .controlpanale p{
+    color: rgb(186, 193, 198);
+    font-size: 13px;
+}
+.container .content .friend .controlpanale .control{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.container .content .friend .controlpanale .control a.profile{
+    background-color: rgb(25, 80, 174); 
+}
+.container .content .friend .controlpanale .control a.block{
+    background-color: rgb(195, 36, 36); 
+}
+.container .content .friend .controlpanale .control a.block,.container .content .friend .controlpanale .control a.profile{
+    text-transform: capitalize;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 2px 14px;
+}
+@media (max-width:820px) {
+    .container .content .friend{
+        width:100%;
+    }
+}
